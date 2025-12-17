@@ -27,9 +27,9 @@ export const Header = () => {
           L BYTE
         </div>
         <nav style={{ display: 'flex', gap: '32px' }}>
-          <a href="#services" style={{ color: '#d4d4d4', textDecoration: 'none', transition: 'color 0.3s' }}>Services</a>
-          <a href="#about" style={{ color: '#d4d4d4', textDecoration: 'none', transition: 'color 0.3s' }}>About</a>
-          <a href="#contact" style={{ color: '#d4d4d4', textDecoration: 'none', transition: 'color 0.3s' }}>Contact</a>
+          <a href="#services" style={{ color: '#d4d4d4', textDecoration: 'none', transition: 'color 0.3s' }}>Servicios</a>
+          <a href="#about" style={{ color: '#d4d4d4', textDecoration: 'none', transition: 'color 0.3s' }}>Nosotros</a>
+          <a href="#contact" style={{ color: '#d4d4d4', textDecoration: 'none', transition: 'color 0.3s' }}>Contacto</a>
         </nav>
       </div>
     </header>

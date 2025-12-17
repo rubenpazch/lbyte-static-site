@@ -32,7 +32,7 @@ export const Hero = () => {
           fontWeight: 600,
           color: '#ff8534'
         }}>
-          ✨ Modern Software Development
+          ✨ Soluciones Digitales Escalables
         </div>
 
         <h1 style={{
@@ -41,24 +41,23 @@ export const Hero = () => {
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent'
         }}>
-          Code that drives
+          Transformamos ideas en
           <br />
           <span style={{
             background: 'linear-gradient(135deg, #ff6a00 0%, #ff8534 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent'
           }}>
-            your business
+            productos tecnológicos de alto impacto
           </span>
         </h1>
 
         <p style={{
           fontSize: '1.25rem',
           marginBottom: '48px',
-          maxWidth: '600px'
+          maxWidth: '700px'
         }}>
-          We build modern, scalable software aligned with your company's real needs.
-          From MVP to enterprise solutions.
+          Creamos soluciones digitales escalables, eficientes y orientadas al negocio mediante ingeniería de software de calidad.
         </p>
 
         <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
@@ -72,7 +71,7 @@ export const Hero = () => {
             transition: 'transform 0.2s, box-shadow 0.2s',
             boxShadow: '0 4px 20px rgba(255, 106, 0, 0.3)'
           }}>
-            Get Started
+            Empezar Ahora
           </a>
           <a href="#services" style={{
             padding: '16px 32px',
@@ -84,7 +83,7 @@ export const Hero = () => {
             border: '2px solid rgba(255, 106, 0, 0.5)',
             transition: 'all 0.2s'
           }}>
-            View Services
+            Ver Servicios
           </a>
         </div>
       </div>

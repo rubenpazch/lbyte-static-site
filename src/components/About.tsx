@@ -1,9 +1,9 @@
 export const About = () => {
   const stats = [
-    { value: '50+', label: 'Projects Delivered' },
-    { value: '100%', label: 'Client Satisfaction' },
-    { value: '24/7', label: 'Support Available' },
-    { value: '5+', label: 'Years Experience' }
+    { value: '50+', label: 'Proyectos Entregados' },
+    { value: '100%', label: 'Satisfacción del Cliente' },
+    { value: '24/7', label: 'Soporte Disponible' },
+    { value: '5+', label: 'Años de Experiencia' }
   ]
 
   return (
@@ -31,14 +31,53 @@ export const About = () => {
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent'
         }}>
-          About L BYTE
+          Sobre L BYTE
         </h2>
 
-        <p style={{ marginBottom: '48px' }}>
-          At L BYTE, we help companies and startups transform ideas into
-          high-impact digital products. Our approach combines software engineering,
-          best practices, and deep business understanding to deliver solutions that drive real results.
+        <p style={{ marginBottom: '24px', fontSize: '1.125rem' }}>
+          En L BYTE diseñamos y desarrollamos software a medida que impulsa el crecimiento de nuestros clientes.
+          Nos especializamos en construir aplicaciones web modernas, APIs robustas y soluciones digitales que se
+          adaptan a las necesidades reales del negocio.
         </p>
+
+        <p style={{ marginBottom: '48px' }}>
+          Trabajamos con tecnologías actuales y buenas prácticas de ingeniería para garantizar productos seguros,
+          mantenibles y escalables. Nuestro enfoque combina entendimiento del negocio, diseño funcional y
+          desarrollo de software de alta calidad.
+        </p>
+
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gap: '32px',
+          marginBottom: '64px'
+        }}>
+          <div style={{
+            padding: '24px',
+            background: 'rgba(255, 106, 0, 0.05)',
+            borderRadius: '16px',
+            border: '1px solid rgba(255, 106, 0, 0.2)'
+          }}>
+            <h3 style={{ color: '#ff8534', fontSize: '1.25rem', marginBottom: '12px' }}>🎯 Misión</h3>
+            <p style={{ fontSize: '0.95rem', margin: 0, lineHeight: '1.7' }}>
+              Crear software confiable y bien diseñado que ayude a las empresas a optimizar procesos,
+              mejorar la experiencia de sus usuarios y escalar sus productos digitales.
+            </p>
+          </div>
+
+          <div style={{
+            padding: '24px',
+            background: 'rgba(255, 106, 0, 0.05)',
+            borderRadius: '16px',
+            border: '1px solid rgba(255, 106, 0, 0.2)'
+          }}>
+            <h3 style={{ color: '#ff8534', fontSize: '1.25rem', marginBottom: '12px' }}>🚀 Visión</h3>
+            <p style={{ fontSize: '0.95rem', margin: 0, lineHeight: '1.7' }}>
+              Convertirnos en un socio tecnológico de referencia, reconocido por la calidad de nuestro código,
+              la claridad de nuestras soluciones y el impacto real en los negocios de nuestros clientes.
+            </p>
+          </div>
+        </div>
 
         <div style={{
           display: 'grid',

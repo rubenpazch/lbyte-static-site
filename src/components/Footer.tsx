@@ -25,25 +25,25 @@ export const Footer = () => {
             L BYTE
           </div>
           <p style={{ fontSize: '0.875rem', margin: 0 }}>
-            Building the future, one line of code at a time.
+            Construyendo el futuro, una línea de código a la vez.
           </p>
         </div>
 
         <div>
-          <h4 style={{ marginBottom: '16px', color: '#ffffff' }}>Services</h4>
+          <h4 style={{ marginBottom: '16px', color: '#ffffff' }}>Servicios</h4>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            <a href="#services" style={{ color: '#d4d4d4', textDecoration: 'none', fontSize: '0.875rem' }}>Web Development</a>
-            <a href="#services" style={{ color: '#d4d4d4', textDecoration: 'none', fontSize: '0.875rem' }}>Mobile Apps</a>
-            <a href="#services" style={{ color: '#d4d4d4', textDecoration: 'none', fontSize: '0.875rem' }}>API Development</a>
+            <a href="#services" style={{ color: '#d4d4d4', textDecoration: 'none', fontSize: '0.875rem' }}>Desarrollo Web</a>
+            <a href="#services" style={{ color: '#d4d4d4', textDecoration: 'none', fontSize: '0.875rem' }}>Apps Móviles</a>
+            <a href="#services" style={{ color: '#d4d4d4', textDecoration: 'none', fontSize: '0.875rem' }}>Desarrollo de APIs</a>
           </div>
         </div>
 
         <div>
-          <h4 style={{ marginBottom: '16px', color: '#ffffff' }}>Contact</h4>
+          <h4 style={{ marginBottom: '16px', color: '#ffffff' }}>Contacto</h4>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            <a href="mailto:contact@lbyte.dev" style={{ color: '#d4d4d4', textDecoration: 'none', fontSize: '0.875rem' }}>contact@lbyte.dev</a>
-            <a href="https://github.com/rubenpazch" style={{ color: '#d4d4d4', textDecoration: 'none', fontSize: '0.875rem' }}>GitHub</a>
-            <a href="https://linkedin.com" style={{ color: '#d4d4d4', textDecoration: 'none', fontSize: '0.875rem' }}>LinkedIn</a>
+            <a href="mailto:lbyteperu@gmail.com" style={{ color: '#d4d4d4', textDecoration: 'none', fontSize: '0.875rem' }}>lbyteperu@gmail.com</a>
+            <a href="https://www.facebook.com/profile.php?id=61584959411904" target="_blank" rel="noopener noreferrer" style={{ color: '#d4d4d4', textDecoration: 'none', fontSize: '0.875rem' }}>Facebook</a>
+            <span style={{ color: '#d4d4d4', fontSize: '0.875rem' }}>Perú</span>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@ export const Footer = () => {
         color: '#757575',
         fontSize: '0.875rem'
       }}>
-        © {new Date().getFullYear()} L BYTE. All rights reserved.
+        © {new Date().getFullYear()} L BYTE. Todos los derechos reservados.
       </div>
     </footer>
   )

@@ -1,33 +1,33 @@
 const services = [
   {
     icon: '💻',
-    title: 'Custom Software Development',
-    description: 'Tailored solutions designed specifically for your business needs and workflows.'
+    title: 'Desarrollo de Software a Medida',
+    description: 'Creamos soluciones personalizadas que se ajustan perfectamente a tus procesos de negocio y objetivos.'
   },
   {
     icon: '🌐',
-    title: 'Modern Web Applications',
-    description: 'Fast, responsive, and scalable web apps using cutting-edge technologies.'
+    title: 'Aplicaciones Web (Frontend y Backend)',
+    description: 'Aplicaciones web completas, modernas y escalables con las últimas tecnologías.'
   },
   {
     icon: '🔌',
-    title: 'API & Backend Systems',
-    description: 'Robust backend infrastructure and APIs that power your applications.'
+    title: 'APIs y Sistemas Backend Escalables',
+    description: 'Infraestructura backend robusta diseñada para crecer con tu negocio.'
   },
   {
     icon: '🔄',
-    title: 'Integration & Automation',
-    description: 'Streamline operations by connecting systems and automating workflows.'
+    title: 'Integraciones con Servicios Externos',
+    description: 'Conectamos tus sistemas con plataformas externas para automatizar y optimizar procesos.'
+  },
+  {
+    icon: '🛠️',
+    title: 'Mantenimiento y Mejora de Sistemas',
+    description: 'Mantenemos y evolucionamos tus sistemas existentes para garantizar su óptimo funcionamiento.'
   },
   {
     icon: '🎯',
-    title: 'Technical Consulting',
-    description: 'Expert guidance on architecture, technology stack, and best practices.'
-  },
-  {
-    icon: '📱',
-    title: 'Mobile Solutions',
-    description: 'Cross-platform mobile applications that reach users everywhere.'
+    title: 'Consultoría Técnica y Arquitectura',
+    description: 'Asesoramiento experto en decisiones tecnológicas, arquitectura de software y mejores prácticas.'
   }
 ]
 
@@ -42,10 +42,10 @@ export const Services = () => {
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent'
         }}>
-          Our Services
+          Nuestros Servicios
         </h2>
         <p style={{ margin: '0 auto' }}>
-          End-to-end software solutions for modern businesses
+          Software confiable y bien diseñado que ayuda a optimizar procesos y escalar productos digitales
         </p>
       </div>
 

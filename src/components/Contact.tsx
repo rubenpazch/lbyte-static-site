@@ -25,18 +25,22 @@ export const Contact = () => {
           WebkitTextFillColor: 'transparent',
           marginBottom: '16px'
         }}>
-          Let's Build Something Great
+          No Solo Escribimos Código
         </h2>
 
-        <p style={{ margin: '0 auto 48px', fontSize: '1.125rem' }}>
-          Ready to transform your ideas into reality? Get in touch with our team.
+        <p style={{ margin: '0 auto 24px', fontSize: '1.25rem', maxWidth: '700px' }}>
+          Analizamos el problema, proponemos soluciones claras y construimos software pensado para crecer junto con tu negocio.
+        </p>
+
+        <p style={{ margin: '0 auto 48px', fontSize: '1rem', color: '#d4d4d4' }}>
+          ¿Listo para transformar tus ideas en productos digitales de alto impacto?
         </p>
 
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
           gap: '24px',
-          maxWidth: '800px',
+          maxWidth: '1000px',
           margin: '0 auto 48px'
         }}>
           <div style={{
@@ -47,12 +51,12 @@ export const Contact = () => {
           }}>
             <div style={{ fontSize: '2rem', marginBottom: '12px' }}>📧</div>
             <h4 style={{ color: '#ffffff', marginBottom: '8px' }}>Email</h4>
-            <a href="mailto:contact@lbyte.dev" style={{
+            <a href="mailto:lbyteperu@gmail.com" style={{
               color: '#ff8534',
               textDecoration: 'none',
               fontSize: '0.875rem'
             }}>
-              contact@lbyte.dev
+              lbyteperu@gmail.com
             </a>
           </div>
 
@@ -62,14 +66,14 @@ export const Contact = () => {
             borderRadius: '16px',
             border: '1px solid rgba(255, 106, 0, 0.2)'
           }}>
-            <div style={{ fontSize: '2rem', marginBottom: '12px' }}>💼</div>
-            <h4 style={{ color: '#ffffff', marginBottom: '8px' }}>LinkedIn</h4>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{
+            <div style={{ fontSize: '2rem', marginBottom: '12px' }}>💬</div>
+            <h4 style={{ color: '#ffffff', marginBottom: '8px' }}>WhatsApp</h4>
+            <a href="https://wa.me/message/JZSNQMEX5GQLP1" target="_blank" rel="noopener noreferrer" style={{
               color: '#ff8534',
               textDecoration: 'none',
               fontSize: '0.875rem'
             }}>
-              Connect with us
+              Enviar mensaje
             </a>
           </div>
 
@@ -79,19 +83,54 @@ export const Contact = () => {
             borderRadius: '16px',
             border: '1px solid rgba(255, 106, 0, 0.2)'
           }}>
-            <div style={{ fontSize: '2rem', marginBottom: '12px' }}>🐙</div>
-            <h4 style={{ color: '#ffffff', marginBottom: '8px' }}>GitHub</h4>
-            <a href="https://github.com/rubenpazch" target="_blank" rel="noopener noreferrer" style={{
+            <div style={{ fontSize: '2rem', marginBottom: '12px' }}>👥</div>
+            <h4 style={{ color: '#ffffff', marginBottom: '8px' }}>Facebook</h4>
+            <a href="https://www.facebook.com/profile.php?id=61584959411904" target="_blank" rel="noopener noreferrer" style={{
               color: '#ff8534',
               textDecoration: 'none',
               fontSize: '0.875rem'
             }}>
-              View our code
+              Visítanos
             </a>
+          </div>
+
+          <div style={{
+            padding: '32px',
+            background: 'rgba(255, 255, 255, 0.05)',
+            borderRadius: '16px',
+            border: '1px solid rgba(255, 106, 0, 0.2)'
+          }}>
+            <div style={{ fontSize: '2rem', marginBottom: '12px' }}>🇵🇪</div>
+            <h4 style={{ color: '#ffffff', marginBottom: '8px' }}>Ubicación</h4>
+            <p style={{
+              color: '#ff8534',
+              fontSize: '0.875rem',
+              margin: 0
+            }}>
+              Perú
+            </p>
           </div>
         </div>
 
-        <a href="mailto:contact@lbyte.dev" style={{
+        <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <a href="https://wa.me/message/JZSNQMEX5GQLP1" target="_blank" rel="noopener noreferrer" style={{
+            display: 'inline-block',
+            padding: '16px 48px',
+            background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
+            color: 'white',
+            textDecoration: 'none',
+            borderRadius: '8px',
+            fontWeight: 600,
+            fontSize: '1.125rem',
+            boxShadow: '0 4px 20px rgba(37, 211, 102, 0.3)',
+            transition: 'transform 0.2s'
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
+          onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+            💬 Chatea por WhatsApp
+          </a>
+
+          <a href="mailto:lbyteperu@gmail.com" style={{
           display: 'inline-block',
           padding: '16px 48px',
           background: 'linear-gradient(135deg, #ff6a00 0%, #ff8534 100%)',
@@ -105,8 +144,9 @@ export const Contact = () => {
         }}
         onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
         onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
-          Start Your Project
+          📧 Enviar Email
         </a>
+        </div>
       </div>
     </section>
   )
