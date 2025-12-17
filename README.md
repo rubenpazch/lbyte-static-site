@@ -1,53 +1,113 @@
-# React + TypeScript + Vite
+# L BYTE - Modern Software Development
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for L BYTE software development company built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Modern UI/UX with gradient effects and glassmorphism
+- Fully responsive design
+- Smooth animations and transitions
+- Service showcase
+- Company statistics
+- Contact information
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 19** - UI framework
+- **TypeScript** - Type safety
+- **Vite** - Fast build tool
+- **Express** - Production server
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔧 Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
+```bash
+npm run dev
+```
+
+Visit `http://localhost:5173`
+
+## 🏗️ Build
+
+```bash
+npm run build
+```
+
+## 🚀 Deploy to Heroku
+
+### Prerequisites
+- Heroku CLI installed
+- Heroku account
+
+### Deployment Steps
+
+```bash
+# Login to Heroku
+heroku login
+
+# Create a new Heroku app
+heroku create lbyte-website
+
+# Push to Heroku
+git push heroku main
+
+# Open the app
+heroku open
+```
+
+### Environment Variables
+
+No environment variables required for basic deployment.
+
+## 📝 Project Structure
+
+```
+src/
+├── components/
+│   ├── Header.tsx      # Navigation header
+│   ├── Hero.tsx        # Hero section
+│   ├── Services.tsx    # Services grid
+│   ├── About.tsx       # About section with stats
+│   ├── Contact.tsx     # Contact information
+│   └── Footer.tsx      # Footer with links
+├── styles/
+│   └── main.css        # Global styles
+├── App.tsx             # Main app component
+└── main.tsx            # Entry point
+```
+
+## 🎨 Customization
+
+### Colors
+
+Edit the CSS variables in `src/styles/main.css`:
+
+```css
+:root {
+  --orange: #ff6a00;
+  --green: #2ecc71;
+  --purple: #7f3fbf;
+  --dark: #0a0a0a;
+  --white: #ffffff;
+}
+```
+
+### Content
+
+Update component files in `src/components/` to modify text and content.
+
+## 📄 License
+
+MIT
+
+## 👤 Author
+
+L BYTE - Software Development Company
 import reactDom from 'eslint-plugin-react-dom'
 
 export default defineConfig([
