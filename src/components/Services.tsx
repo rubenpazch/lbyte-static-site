@@ -113,7 +113,6 @@ export const Services = () => {
           Ver Casos de Éxito →
         </a>
       </div>
-      </div>
     </section>
   )
 }
