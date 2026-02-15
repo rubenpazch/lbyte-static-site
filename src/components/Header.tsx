@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import logoDark from '../assets/WebP/logo_black_background_lbyte.webp'
 import logoLight from '../assets/WebP/logo_black_lbyte.webp'
 
@@ -7,9 +8,17 @@ type HeaderProps = {
 }
 
 export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  const navLinks = [
+    { href: '#services', label: 'Servicios' },
+    { href: '#about', label: 'Nosotros' },
+    { href: '#contact', label: 'Contacto' }
+  ]
+
   return (
     <header style={{
-      padding: '24px 40px',
+      padding: 'clamp(16px, 4vw, 24px) clamp(20px, 4vw, 40px)',
       position: 'sticky',
       top: 0,
       backdropFilter: 'blur(10px)',
@@ -29,12 +38,35 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
           alt="L BYTE"
           width="56"
           height="56"
-          style={{ display: 'block', objectFit: 'contain' }}
+          style={{ display: 'block', objectFit: 'contain', flexShrink: 0 }}
         />
-        <nav style={{ display: 'flex', gap: '32px', alignItems: 'center' }}>
-          <a href="#services" style={{ color: 'var(--text)', textDecoration: 'none', transition: 'color 0.3s' }}>Servicios</a>
-          <a href="#about" style={{ color: 'var(--text)', textDecoration: 'none', transition: 'color 0.3s' }}>Nosotros</a>
-          <a href="#contact" style={{ color: 'var(--text)', textDecoration: 'none', transition: 'color 0.3s' }}>Contacto</a>
+
+        {/* Desktop Nav */}
+        <nav style={{
+          display: 'none',
+          gap: '32px',
+          alignItems: 'center',
+          '@media (min-width: 768px)': {
+            display: 'flex'
+          }
+        }} className="desktop-nav">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              style={{
+                color: 'var(--text)',
+                textDecoration: 'none',
+                transition: 'color 0.3s',
+                fontSize: 'clamp(0.875rem, 2vw, 1rem)',
+                fontWeight: 500
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent-bright)')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text)')}
+            >
+              {link.label}
+            </a>
+          ))}
           <button
             type="button"
             onClick={onToggleTheme}
@@ -45,14 +77,136 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
               padding: '8px 12px',
               borderRadius: '999px',
               cursor: 'pointer',
-              fontWeight: 600
+              fontWeight: 600,
+              fontSize: '0.875rem',
+              transition: 'all 0.3s'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = 'var(--accent)'
+              e.currentTarget.style.color = 'white'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'var(--surface)'
+              e.currentTarget.style.color = 'var(--text)'
             }}
             aria-label="Cambiar tema"
           >
             {theme === 'dark' ? 'Claro' : 'Oscuro'}
           </button>
         </nav>
+
+        {/* Mobile Menu Button + Theme Toggle */}
+        <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+          <button
+            type="button"
+            onClick={onToggleTheme}
+            style={{
+              border: '1px solid var(--header-border)',
+              background: 'var(--surface)',
+              color: 'var(--text)',
+              padding: '8px 12px',
+              borderRadius: '999px',
+              cursor: 'pointer',
+              fontWeight: 600,
+              fontSize: '0.75rem',
+              transition: 'all 0.3s'
+            }}
+            aria-label="Cambiar tema"
+          >
+            {theme === 'dark' ? '☀️' : '🌙'}
+          </button>
+          
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            style={{
+              display: 'none',
+              background: 'transparent',
+              border: '2px solid var(--text)',
+              color: 'var(--text)',
+              padding: '8px 12px',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              fontSize: '1.25rem',
+              width: '44px',
+              height: '44px',
+              alignItems: 'center',
+              justifyContent: 'center',
+              transition: 'all 0.3s',
+              '@media (max-width: 767px)': {
+                display: 'flex'
+              }
+            }}
+            className="mobile-menu-btn"
+            aria-label="Menú"
+            aria-expanded={mobileMenuOpen}
+          >
+            {mobileMenuOpen ? '✕' : '☰'}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <nav style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '12px',
+          marginTop: '16px',
+          paddingTop: '16px',
+          borderTop: '1px solid var(--border)',
+          animation: 'slideDown 0.3s ease-out'
+        }}>
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setMobileMenuOpen(false)}
+              style={{
+                color: 'var(--text)',
+                textDecoration: 'none',
+                padding: '12px 8px',
+                fontSize: '1rem',
+                fontWeight: 500,
+                transition: 'all 0.2s',
+                borderRadius: '8px'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'var(--accent-soft)'
+                e.currentTarget.style.paddingLeft = '16px'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'transparent'
+                e.currentTarget.style.paddingLeft = '8px'
+              }}
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+      )}
+
+      <style>{`
+        @media (max-width: 767px) {
+          .desktop-nav {
+            display: none !important;
+          }
+          .mobile-menu-btn {
+            display: flex !important;
+          }
+        }
+        @keyframes slideDown {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </header>
   )
 }
+K/JU&Dc&T6a#
