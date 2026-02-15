@@ -27,7 +27,9 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
         <img
           src={theme === 'light' ? logoLight : logoDark}
           alt="L BYTE"
-          style={{ height: '56px', width: 'auto', display: 'block', objectFit: 'contain' }}
+          width="56"
+          height="56"
+          style={{ display: 'block', objectFit: 'contain' }}
         />
         <nav style={{ display: 'flex', gap: '32px', alignItems: 'center' }}>
           <a href="#services" style={{ color: 'var(--text)', textDecoration: 'none', transition: 'color 0.3s' }}>Servicios</a>

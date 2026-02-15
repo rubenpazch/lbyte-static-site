@@ -50,7 +50,7 @@ export const Contact = () => {
             border: '1px solid var(--accent-border)'
           }}>
             <div style={{ fontSize: '2rem', marginBottom: '12px' }}>📧</div>
-            <h4 style={{ color: 'var(--text)', marginBottom: '8px' }}>Email</h4>
+            <h3 style={{ color: 'var(--text)', marginBottom: '8px', fontSize: '1.125rem', fontWeight: 600 }}>Email</h3>
             <a href="mailto:lbyteperu@gmail.com" style={{
               color: 'var(--accent-bright)',
               textDecoration: 'none',
@@ -67,7 +67,7 @@ export const Contact = () => {
             border: '1px solid var(--accent-border)'
           }}>
             <div style={{ fontSize: '2rem', marginBottom: '12px' }}>💬</div>
-            <h4 style={{ color: 'var(--text)', marginBottom: '8px' }}>WhatsApp</h4>
+            <h3 style={{ color: 'var(--text)', marginBottom: '8px', fontSize: '1.125rem', fontWeight: 600 }}>WhatsApp</h3>
             <a href="https://wa.me/message/JZSNQMEX5GQLP1" target="_blank" rel="noopener noreferrer" style={{
               color: 'var(--accent-bright)',
               textDecoration: 'none',
@@ -84,7 +84,7 @@ export const Contact = () => {
             border: '1px solid var(--accent-border)'
           }}>
             <div style={{ fontSize: '2rem', marginBottom: '12px' }}>👥</div>
-            <h4 style={{ color: 'var(--text)', marginBottom: '8px' }}>Facebook</h4>
+            <h3 style={{ color: 'var(--text)', marginBottom: '8px', fontSize: '1.125rem', fontWeight: 600 }}>Facebook</h3>
             <a href="https://www.facebook.com/profile.php?id=61584959411904" target="_blank" rel="noopener noreferrer" style={{
               color: 'var(--accent-bright)',
               textDecoration: 'none',
@@ -101,7 +101,7 @@ export const Contact = () => {
             border: '1px solid var(--accent-border)'
           }}>
             <div style={{ fontSize: '2rem', marginBottom: '12px' }}>🇵🇪</div>
-            <h4 style={{ color: 'var(--text)', marginBottom: '8px' }}>Ubicación</h4>
+            <h3 style={{ color: 'var(--text)', marginBottom: '8px', fontSize: '1.125rem', fontWeight: 600 }}>Ubicación</h3>
             <p style={{
               color: 'var(--accent-bright)',
               fontSize: '0.875rem',

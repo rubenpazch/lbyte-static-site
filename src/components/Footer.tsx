@@ -30,7 +30,7 @@ export const Footer = () => {
         </div>
 
         <div>
-          <h4 style={{ marginBottom: '16px', color: 'var(--text)' }}>Servicios</h4>
+          <h3 style={{ marginBottom: '16px', color: 'var(--text)', fontSize: '1.125rem', fontWeight: 600 }}>Servicios</h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             <a href="#services" style={{ color: 'var(--muted)', textDecoration: 'none', fontSize: '0.875rem' }}>Desarrollo Web</a>
             <a href="#services" style={{ color: 'var(--muted)', textDecoration: 'none', fontSize: '0.875rem' }}>Apps Móviles</a>
@@ -39,7 +39,7 @@ export const Footer = () => {
         </div>
 
         <div>
-          <h4 style={{ marginBottom: '16px', color: 'var(--text)' }}>Contacto</h4>
+          <h3 style={{ marginBottom: '16px', color: 'var(--text)', fontSize: '1.125rem', fontWeight: 600 }}>Contacto</h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             <a href="mailto:lbyteperu@gmail.com" style={{ color: 'var(--muted)', textDecoration: 'none', fontSize: '0.875rem' }}>lbyteperu@gmail.com</a>
             <a href="https://www.facebook.com/profile.php?id=61584959411904" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--muted)', textDecoration: 'none', fontSize: '0.875rem' }}>Facebook</a>
