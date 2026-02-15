@@ -1,11 +1,4 @@
 export const About = () => {
-  const stats = [
-    { value: '50+', label: 'Proyectos Entregados' },
-    { value: '100%', label: 'Satisfacción del Cliente' },
-    { value: '24/7', label: 'Soporte Disponible' },
-    { value: '5+', label: 'Años de Experiencia' }
-  ]
-
   return (
     <section id="about" style={{
       background: 'var(--surface-2)',
@@ -77,31 +70,6 @@ export const About = () => {
               la claridad de nuestras soluciones y el impacto real en los negocios de nuestros clientes.
             </p>
           </div>
-        </div>
-
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
-          gap: '32px',
-          marginTop: '64px'
-        }}>
-          {stats.map((stat) => (
-            <div key={stat.label} style={{ textAlign: 'center' }}>
-              <div style={{
-                fontSize: '3rem',
-                fontWeight: 800,
-                background: 'linear-gradient(135deg, var(--accent) 0%, var(--accent-bright) 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                marginBottom: '8px'
-              }}>
-                {stat.value}
-              </div>
-              <div style={{ color: 'var(--muted)', fontSize: '0.875rem' }}>
-                {stat.label}
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>
