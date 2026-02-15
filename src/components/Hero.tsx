@@ -84,7 +84,7 @@ export const Hero = () => {
               textDecoration: 'none',
               borderRadius: '8px',
               fontWeight: 600,
-              transition: 'transform 0.2s, box-shadow 0.2s',
+              transition: 'transform 0.2s',
               boxShadow: '0 4px 20px var(--accent-shadow)'
             }}
           >
@@ -100,7 +100,7 @@ export const Hero = () => {
               borderRadius: '8px',
               fontWeight: 600,
               border: '2px solid var(--accent-border)',
-              transition: 'all 0.2s'
+              transition: 'transform 0.2s'
             }}
           >
             Ver Servicios

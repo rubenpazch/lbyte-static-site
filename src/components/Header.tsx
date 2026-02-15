@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import logoDark from '../assets/WebP/logo_black_background_lbyte.webp'
-import logoLight from '../assets/WebP/logo_black_lbyte.webp'
 
 type HeaderProps = {
   theme: 'light' | 'dark'
@@ -37,7 +35,7 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
       }}>
         <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
           <img
-            src={theme === 'light' ? logoLight : logoDark}
+            src={theme === 'light' ? '/logo_black_lbyte.webp' : '/logo_black_background_lbyte.webp'}
             alt="L BYTE"
             width="56"
             height="56"
@@ -58,7 +56,6 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
                 style={{
                   color: 'var(--text)',
                   textDecoration: 'none',
-                  transition: 'color 0.3s',
                   fontSize: 'clamp(0.875rem, 2vw, 1rem)',
                   fontWeight: 500
                 }}
@@ -74,7 +71,6 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
                 style={{
                   color: 'var(--text)',
                   textDecoration: 'none',
-                  transition: 'color 0.3s',
                   fontSize: 'clamp(0.875rem, 2vw, 1rem)',
                   fontWeight: 500
                 }}
@@ -157,16 +153,16 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
                   padding: '12px 8px',
                   fontSize: '1rem',
                   fontWeight: 500,
-                  transition: 'all 0.2s',
+                  transition: 'transform 0.2s',
                   borderRadius: '8px'
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = 'var(--accent-soft)'
-                  e.currentTarget.style.paddingLeft = '16px'
+                  e.currentTarget.style.transform = 'translateX(8px)'
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.background = 'transparent'
-                  e.currentTarget.style.paddingLeft = '8px'
+                  e.currentTarget.style.transform = 'translateX(0)'
                 }}
               >
                 {link.label}
@@ -182,16 +178,16 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
                   padding: '12px 8px',
                   fontSize: '1rem',
                   fontWeight: 500,
-                  transition: 'all 0.2s',
+                  transition: 'transform 0.2s',
                   borderRadius: '8px'
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = 'var(--accent-soft)'
-                  e.currentTarget.style.paddingLeft = '16px'
+                  e.currentTarget.style.transform = 'translateX(8px)'
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.background = 'transparent'
-                  e.currentTarget.style.paddingLeft = '8px'
+                  e.currentTarget.style.transform = 'translateX(0)'
                 }}
               >
                 {link.label}
