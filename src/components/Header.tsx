@@ -43,12 +43,8 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
 
         {/* Desktop Nav */}
         <nav style={{
-          display: 'none',
           gap: '32px',
-          alignItems: 'center',
-          '@media (min-width: 768px)': {
-            display: 'flex'
-          }
+          alignItems: 'center'
         }} className="desktop-nav">
           {navLinks.map((link) => (
             <a
@@ -120,7 +116,6 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             style={{
-              display: 'none',
               background: 'transparent',
               border: '2px solid var(--text)',
               color: 'var(--text)',
@@ -132,10 +127,7 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
               height: '44px',
               alignItems: 'center',
               justifyContent: 'center',
-              transition: 'all 0.3s',
-              '@media (max-width: 767px)': {
-                display: 'flex'
-              }
+              transition: 'all 0.3s'
             }}
             className="mobile-menu-btn"
             aria-label="Menú"
@@ -187,6 +179,12 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
       )}
 
       <style>{`
+        .desktop-nav {
+          display: flex;
+        }
+        .mobile-menu-btn {
+          display: none;
+        }
         @media (max-width: 767px) {
           .desktop-nav {
             display: none !important;
@@ -209,4 +207,3 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
     </header>
   )
 }
-K/JU&Dc&T6a#
