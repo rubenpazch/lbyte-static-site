@@ -36,11 +36,13 @@ function App() {
   return (
     <>
       <Header theme={theme} onToggleTheme={toggleTheme} />
-      <Hero />
-      <Services />
-      <About />
-      {/* <Portfolio /> */}
-      <Contact />
+      <main>
+        <Hero />
+        <Services />
+        <About />
+        {/* <Portfolio /> */}
+        <Contact />
+      </main>
       <Footer />
     </>
   )
