@@ -10,11 +10,7 @@ export const FAQs = () => {
     },
     {
       question: '¿Cuál es el costo de un proyecto?',
-      answer: 'Ofrecemos modelos flexibles: tiempo y materiales, o presupuesto fijo. Los presupuestos varían desde $5,000 para MVPs hasta $100,000+ para aplicaciones enterprise. Realizamos una consulta inicial gratuita.'
-    },
-    {
-      question: '¿Qué tecnologías utilizan?',
-      answer: 'Trabajamos con: React, Node.js, TypeScript, PostgreSQL, MongoDB, AWS, Docker. Elegimos la tech stack ideal según los requerimientos específicos de tu proyecto.'
+      answer: 'Ofrecemos modelos flexibles: tiempo y materiales, o presupuesto fijo. El costo varía según la complejidad, funcionalidades y tecnologías. En la consulta inicial te damos una estimación basada en tus requerimientos.'
     },
     {
       question: '¿Ofrecen mantenimiento después del lanzamiento?',
@@ -22,11 +18,11 @@ export const FAQs = () => {
     },
     {
       question: '¿Cómo es el proceso de comunicación?',
-      answer: 'Reuniones semanales, reportes de progreso, acceso a repositorio Git, y Slack/WhatsApp para comunicación directa. Transparencia total en cada etapa del proyecto.'
+      answer: 'Reuniones semanales, reportes de progreso, comunicación por WhatsApp, Meet etc. para comunicación directa. Transparencia total en cada etapa del proyecto.'
     },
     {
-      question: '¿Trabajamos solo con empresas grandes o también con startups?',
-      answer: 'Trabajamos con ambos. Tenemos experiencia con MVPs de startups y proyectos grandes de empresas consolidadas. Adaptamos nuestro proceso según tu etapa y presupuesto.'
+      question: '¿Trabajamos solo con empresas grandes?',
+      answer: 'No, trabajamos con empresas de todos los tamaños, incluyendo emprendimientos y pymes.'
     }
   ]
 

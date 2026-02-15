@@ -2,10 +2,13 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/assets/logo_black_lbyte.webp" as="image" />
+    <link rel="preload" href="/assets/logo_black_background_lbyte.webp" as="image" />
+    
+    <!-- SEO Meta Tags -->
     <title>L BYTE | Desarrollo de software a medida en Peru</title>
     <meta name="description" content="L BYTE desarrolla software a medida, aplicaciones web y APIs escalables. Soluciones digitales modernas para empresas en Peru." />
     <meta name="keywords" content="desarrollo de software, aplicaciones web, APIs, consultoria tecnica, Peru, L BYTE" />
@@ -14,6 +17,8 @@
     <link rel="canonical" href="https://lbyte.pe/" />
     <meta name="theme-color" content="#e5392d" />
     <meta name="color-scheme" content="light dark" />
+    
+    <!-- Open Graph -->
     <meta property="og:title" content="L BYTE | Desarrollo de software a medida" />
     <meta property="og:description" content="Creamos software a medida, aplicaciones web modernas y APIs escalables para empresas en Peru." />
     <meta property="og:type" content="website" />

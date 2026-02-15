@@ -76,7 +76,7 @@ export const Hero = () => {
 
         <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
           <a
-            href="#contact"
+            href="/contacto"
             style={{
               padding: '16px 32px',
               background: 'linear-gradient(135deg, var(--accent) 0%, var(--accent-bright) 100%)',
@@ -91,7 +91,7 @@ export const Hero = () => {
             Empezar Ahora
           </a>
           <a
-            href="#services"
+            href="/servicios"
             style={{
               padding: '16px 32px',
               background: 'transparent',

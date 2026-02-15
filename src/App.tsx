@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Header } from './components/Header'
-import { Hero } from './components/Hero'
-import { Services } from './components/Services'
-import { About } from './components/About'
-import { CaseStudies } from './components/CaseStudies'
-import { Testimonials } from './components/Testimonials'
-import { FAQs } from './components/FAQs'
-import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
+import { Home } from './pages/Home'
+import { Blog } from './pages/Blog'
+import { BlogPost } from './pages/BlogPost'
+import { ServicesPage } from './pages/Services'
+import { AboutPage } from './pages/About'
+import { ContactPage } from './pages/Contact'
+import { FAQsPage } from './pages/FAQs'
 
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
@@ -36,19 +37,19 @@ function App() {
   }
 
   return (
-    <>
+    <Router>
       <Header theme={theme} onToggleTheme={toggleTheme} />
-      <main>
-        <Hero />
-        <Services />
-        <About />
-        <CaseStudies />
-        <Testimonials />
-        <FAQs />
-        <Contact />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/servicios" element={<ServicesPage />} />
+        <Route path="/nosotros" element={<AboutPage />} />
+        <Route path="/contacto" element={<ContactPage />} />
+        <Route path="/faq" element={<FAQsPage />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   )
 }
 

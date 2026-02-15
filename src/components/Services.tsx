@@ -87,7 +87,7 @@ export const Services = () => {
       </div>
 
       <div style={{ textAlign: 'center', marginTop: '64px' }}>
-        <p style={{ color: 'var(--muted)', marginBottom: '24px' }}>
+        {/* <p style={{ color: 'var(--muted)', marginBottom: '24px' }}>
           Conoce cómo hemos ayudado a otras empresas a alcanzar sus objetivos digitales
         </p>
         <a
@@ -105,13 +105,15 @@ export const Services = () => {
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = 'translateY(-2px)';
+            e.currentTarget.style.boxShadow = '0 6px 25px var(--accent-shadow)';
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.boxShadow = '0 4px 20px var(--accent-shadow)';
           }}
         >
           Ver Casos de Éxito →
-        </a>
+        </a> */}
       </div>
     </section>
   )

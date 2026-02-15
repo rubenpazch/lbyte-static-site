@@ -1,18 +1,18 @@
 export const CaseStudies = () => {
   const cases = [
     {
-      title: 'BizFlow - Plataforma de Automatización',
-      client: 'Startup de SaaS',
-      sector: 'Enterprise Automation',
-      challenge: 'Necesitaban una plataforma para automatizar procesos empresariales sin código',
-      solution: 'Desarrollamos una web app con React, Node.js y PostgreSQL con UI drag-and-drop',
-      result: '500+ usuarios activos en primer trimestre, integración con +50 aplicaciones',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS']
+      title: 'El Roble - Aplicacion web',
+      client: 'Optica',
+      sector: 'Sistematizacion de Procesos Operativos',
+      challenge: 'Optimizar procesos operativos y mejorar atención al cliente con una solución digital',
+      solution: 'Desarrollamos una solución web que optimiza los procesos operativos y la atención al cliente',
+      result: 'Reduccion de 100% en tiempos de respuesta, aumento de 50% en eficiencia operativa, mejor experiencia de cliente',
+      technologies: ['Web']
     },
     {
-      title: 'EcomPlus - Sistema de E-commerce',
+      title: 'Museo Sulca Textiles - Sistema de E-commerce',
       client: 'Retail tradicional',
-      sector: 'E-commerce',
+      sector: 'Solucion Web',
       challenge: 'Migrar de plataforma antigua a solución moderna y escalable',
       solution: 'API REST con Node.js, base de datos optimizada, frontend React con SEO mejorado',
       result: '+300% en conversiones, carga 60% más rápida, soporte de 10K concurrent users',
