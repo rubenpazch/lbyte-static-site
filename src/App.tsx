@@ -10,7 +10,7 @@ import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 
 function App() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('dark')
+  const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
   useEffect(() => {
     const saved = window.localStorage.getItem('theme')
