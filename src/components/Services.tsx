@@ -85,6 +85,35 @@ export const Services = () => {
           </div>
         ))}
       </div>
+
+      <div style={{ textAlign: 'center', marginTop: '64px' }}>
+        <p style={{ color: 'var(--muted)', marginBottom: '24px' }}>
+          Conoce cómo hemos ayudado a otras empresas a alcanzar sus objetivos digitales
+        </p>
+        <a
+          href="#cases"
+          style={{
+            display: 'inline-block',
+            padding: '14px 28px',
+            background: 'linear-gradient(135deg, var(--accent) 0%, var(--accent-bright) 100%)',
+            color: 'white',
+            textDecoration: 'none',
+            borderRadius: '8px',
+            fontWeight: 600,
+            transition: 'transform 0.2s, box-shadow 0.2s',
+            boxShadow: '0 4px 20px var(--accent-shadow)'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'translateY(-2px)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'translateY(0)';
+          }}
+        >
+          Ver Casos de Éxito →
+        </a>
+      </div>
+      </div>
     </section>
   )
 }

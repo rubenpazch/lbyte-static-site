@@ -33,7 +33,8 @@ export const Contact = () => {
         </p>
 
         <p style={{ margin: '0 auto 48px', fontSize: '1rem', color: 'var(--muted)' }}>
-          ¿Listo para transformar tus ideas en productos digitales de alto impacto?
+          ¿Listo para transformar tus ideas en productos digitales de alto impacto? <br />
+          <a href="#cases" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>Ver casos de éxito</a> o <a href="#testimonials" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>leer testimonios de clientes</a>.
         </p>
 
         <div style={{

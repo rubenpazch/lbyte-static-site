@@ -1,0 +1,36 @@
+# L BYTE - robots.txt
+# Allow all search engines to index the site
+
+User-agent: *
+Allow: /
+Allow: /src/
+Allow: /assets/
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /\.
+
+Sitemap: https://lbyte.pe/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Social Media
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Crawl delays
+Crawl-delay: 1

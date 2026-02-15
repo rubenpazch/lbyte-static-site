@@ -39,6 +39,16 @@ export const Footer = () => {
         </div>
 
         <div>
+          <h3 style={{ marginBottom: '16px', color: 'var(--text)', fontSize: '1.125rem', fontWeight: 600 }}>Empresa</h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <a href="#about" style={{ color: 'var(--muted)', textDecoration: 'none', fontSize: '0.875rem' }}>Sobre Nosotros</a>
+            <a href="#cases" style={{ color: 'var(--muted)', textDecoration: 'none', fontSize: '0.875rem' }}>Casos de Éxito</a>
+            <a href="#testimonials" style={{ color: 'var(--muted)', textDecoration: 'none', fontSize: '0.875rem' }}>Testimonios</a>
+            <a href="#faq" style={{ color: 'var(--muted)', textDecoration: 'none', fontSize: '0.875rem' }}>Preguntas Frecuentes</a>
+          </div>
+        </div>
+
+        <div>
           <h3 style={{ marginBottom: '16px', color: 'var(--text)', fontSize: '1.125rem', fontWeight: 600 }}>Contacto</h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             <a href="mailto:lbyteperu@gmail.com" style={{ color: 'var(--muted)', textDecoration: 'none', fontSize: '0.875rem' }}>lbyteperu@gmail.com</a>
