@@ -34,11 +34,11 @@ const services = [
 export const Services = () => {
   return (
     <section id="services" style={{
-      background: 'linear-gradient(180deg, transparent 0%, rgba(255, 106, 0, 0.03) 100%)'
+      background: 'linear-gradient(180deg, rgba(15, 15, 16, 0) 0%, var(--accent-soft) 100%)'
     }}>
       <div style={{ textAlign: 'center', marginBottom: '64px' }}>
         <h2 style={{
-          background: 'linear-gradient(135deg, #ffffff 0%, #d4d4d4 100%)',
+          background: 'linear-gradient(135deg, var(--text) 0%, var(--muted) 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent'
         }}>
@@ -57,29 +57,29 @@ export const Services = () => {
         {services.map(service => (
           <div key={service.title} style={{
             padding: '32px',
-            background: 'rgba(255, 255, 255, 0.03)',
-            border: '1px solid rgba(255, 106, 0, 0.2)',
+            background: 'var(--surface)',
+            border: '1px solid var(--accent-border)',
             borderRadius: '16px',
             transition: 'all 0.3s',
             cursor: 'pointer'
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = 'translateY(-8px)';
-            e.currentTarget.style.borderColor = 'rgba(255, 106, 0, 0.5)';
-            e.currentTarget.style.boxShadow = '0 12px 40px rgba(255, 106, 0, 0.2)';
+            e.currentTarget.style.borderColor = 'var(--accent)';
+            e.currentTarget.style.boxShadow = '0 12px 40px var(--accent-shadow)';
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.borderColor = 'rgba(255, 106, 0, 0.2)';
+            e.currentTarget.style.borderColor = 'var(--accent-border)';
             e.currentTarget.style.boxShadow = 'none';
           }}>
             <div style={{ fontSize: '3rem', marginBottom: '16px' }}>
               {service.icon}
             </div>
-            <h3 style={{ color: '#ffffff', marginBottom: '12px' }}>
+            <h3 style={{ color: 'var(--text)', marginBottom: '12px' }}>
               {service.title}
             </h3>
-            <p style={{ fontSize: '1rem', margin: 0 }}>
+            <p style={{ fontSize: '1rem', margin: 0, color: 'var(--muted)' }}>
               {service.description}
             </p>
           </div>

@@ -1,7 +1,7 @@
 export const Contact = () => {
   return (
     <section id="contact" style={{
-      background: 'linear-gradient(135deg, rgba(255, 106, 0, 0.1) 0%, rgba(127, 63, 191, 0.1) 100%)',
+      background: 'linear-gradient(135deg, var(--accent-soft) 0%, rgba(255, 75, 58, 0.06) 100%)',
       borderRadius: '24px',
       position: 'relative',
       overflow: 'hidden'
@@ -12,7 +12,7 @@ export const Contact = () => {
         right: '-5%',
         width: '600px',
         height: '600px',
-        background: 'radial-gradient(circle, rgba(127, 63, 191, 0.15) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, var(--accent-glow) 0%, transparent 70%)',
         borderRadius: '50%',
         filter: 'blur(80px)',
         pointerEvents: 'none'
@@ -20,7 +20,7 @@ export const Contact = () => {
 
       <div style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
         <h2 style={{
-          background: 'linear-gradient(135deg, #ffffff 0%, #d4d4d4 100%)',
+          background: 'linear-gradient(135deg, var(--text) 0%, var(--muted) 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           marginBottom: '16px'
@@ -32,7 +32,7 @@ export const Contact = () => {
           Analizamos el problema, proponemos soluciones claras y construimos software pensado para crecer junto con tu negocio.
         </p>
 
-        <p style={{ margin: '0 auto 48px', fontSize: '1rem', color: '#d4d4d4' }}>
+        <p style={{ margin: '0 auto 48px', fontSize: '1rem', color: 'var(--muted)' }}>
           ¿Listo para transformar tus ideas en productos digitales de alto impacto?
         </p>
 
@@ -45,14 +45,14 @@ export const Contact = () => {
         }}>
           <div style={{
             padding: '32px',
-            background: 'rgba(255, 255, 255, 0.05)',
+            background: 'var(--surface)',
             borderRadius: '16px',
-            border: '1px solid rgba(255, 106, 0, 0.2)'
+            border: '1px solid var(--accent-border)'
           }}>
             <div style={{ fontSize: '2rem', marginBottom: '12px' }}>📧</div>
-            <h4 style={{ color: '#ffffff', marginBottom: '8px' }}>Email</h4>
+            <h4 style={{ color: 'var(--text)', marginBottom: '8px' }}>Email</h4>
             <a href="mailto:lbyteperu@gmail.com" style={{
-              color: '#ff8534',
+              color: 'var(--accent-bright)',
               textDecoration: 'none',
               fontSize: '0.875rem'
             }}>
@@ -62,14 +62,14 @@ export const Contact = () => {
 
           <div style={{
             padding: '32px',
-            background: 'rgba(255, 255, 255, 0.05)',
+            background: 'var(--surface)',
             borderRadius: '16px',
-            border: '1px solid rgba(255, 106, 0, 0.2)'
+            border: '1px solid var(--accent-border)'
           }}>
             <div style={{ fontSize: '2rem', marginBottom: '12px' }}>💬</div>
-            <h4 style={{ color: '#ffffff', marginBottom: '8px' }}>WhatsApp</h4>
+            <h4 style={{ color: 'var(--text)', marginBottom: '8px' }}>WhatsApp</h4>
             <a href="https://wa.me/message/JZSNQMEX5GQLP1" target="_blank" rel="noopener noreferrer" style={{
-              color: '#ff8534',
+              color: 'var(--accent-bright)',
               textDecoration: 'none',
               fontSize: '0.875rem'
             }}>
@@ -79,14 +79,14 @@ export const Contact = () => {
 
           <div style={{
             padding: '32px',
-            background: 'rgba(255, 255, 255, 0.05)',
+            background: 'var(--surface)',
             borderRadius: '16px',
-            border: '1px solid rgba(255, 106, 0, 0.2)'
+            border: '1px solid var(--accent-border)'
           }}>
             <div style={{ fontSize: '2rem', marginBottom: '12px' }}>👥</div>
-            <h4 style={{ color: '#ffffff', marginBottom: '8px' }}>Facebook</h4>
+            <h4 style={{ color: 'var(--text)', marginBottom: '8px' }}>Facebook</h4>
             <a href="https://www.facebook.com/profile.php?id=61584959411904" target="_blank" rel="noopener noreferrer" style={{
-              color: '#ff8534',
+              color: 'var(--accent-bright)',
               textDecoration: 'none',
               fontSize: '0.875rem'
             }}>
@@ -96,14 +96,14 @@ export const Contact = () => {
 
           <div style={{
             padding: '32px',
-            background: 'rgba(255, 255, 255, 0.05)',
+            background: 'var(--surface)',
             borderRadius: '16px',
-            border: '1px solid rgba(255, 106, 0, 0.2)'
+            border: '1px solid var(--accent-border)'
           }}>
             <div style={{ fontSize: '2rem', marginBottom: '12px' }}>🇵🇪</div>
-            <h4 style={{ color: '#ffffff', marginBottom: '8px' }}>Ubicación</h4>
+            <h4 style={{ color: 'var(--text)', marginBottom: '8px' }}>Ubicación</h4>
             <p style={{
-              color: '#ff8534',
+              color: 'var(--accent-bright)',
               fontSize: '0.875rem',
               margin: 0
             }}>
@@ -133,13 +133,13 @@ export const Contact = () => {
           <a href="mailto:lbyteperu@gmail.com" style={{
           display: 'inline-block',
           padding: '16px 48px',
-          background: 'linear-gradient(135deg, #ff6a00 0%, #ff8534 100%)',
+          background: 'linear-gradient(135deg, var(--accent) 0%, var(--accent-bright) 100%)',
           color: 'white',
           textDecoration: 'none',
           borderRadius: '8px',
           fontWeight: 600,
           fontSize: '1.125rem',
-          boxShadow: '0 4px 20px rgba(255, 106, 0, 0.3)',
+          boxShadow: '0 4px 20px var(--accent-shadow)',
           transition: 'transform 0.2s'
         }}
         onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}

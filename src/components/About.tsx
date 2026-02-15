@@ -8,7 +8,7 @@ export const About = () => {
 
   return (
     <section id="about" style={{
-      background: 'rgba(255, 106, 0, 0.03)',
+      background: 'var(--surface-2)',
       borderRadius: '24px',
       position: 'relative',
       overflow: 'hidden'
@@ -19,7 +19,7 @@ export const About = () => {
         left: '-10%',
         width: '400px',
         height: '400px',
-        background: 'radial-gradient(circle, rgba(46, 204, 113, 0.1) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, var(--accent-glow) 0%, transparent 70%)',
         borderRadius: '50%',
         filter: 'blur(60px)',
         pointerEvents: 'none'
@@ -27,7 +27,7 @@ export const About = () => {
 
       <div style={{ position: 'relative', zIndex: 1 }}>
         <h2 style={{
-          background: 'linear-gradient(135deg, #ffffff 0%, #d4d4d4 100%)',
+          background: 'linear-gradient(135deg, var(--text) 0%, var(--muted) 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent'
         }}>
@@ -54,11 +54,11 @@ export const About = () => {
         }}>
           <div style={{
             padding: '24px',
-            background: 'rgba(255, 106, 0, 0.05)',
+            background: 'var(--surface)',
             borderRadius: '16px',
-            border: '1px solid rgba(255, 106, 0, 0.2)'
+            border: '1px solid var(--accent-border)'
           }}>
-            <h3 style={{ color: '#ff8534', fontSize: '1.25rem', marginBottom: '12px' }}>🎯 Misión</h3>
+            <h3 style={{ color: 'var(--accent-bright)', fontSize: '1.25rem', marginBottom: '12px' }}>🎯 Misión</h3>
             <p style={{ fontSize: '0.95rem', margin: 0, lineHeight: '1.7' }}>
               Crear software confiable y bien diseñado que ayude a las empresas a optimizar procesos,
               mejorar la experiencia de sus usuarios y escalar sus productos digitales.
@@ -67,11 +67,11 @@ export const About = () => {
 
           <div style={{
             padding: '24px',
-            background: 'rgba(255, 106, 0, 0.05)',
+            background: 'var(--surface)',
             borderRadius: '16px',
-            border: '1px solid rgba(255, 106, 0, 0.2)'
+            border: '1px solid var(--accent-border)'
           }}>
-            <h3 style={{ color: '#ff8534', fontSize: '1.25rem', marginBottom: '12px' }}>🚀 Visión</h3>
+            <h3 style={{ color: 'var(--accent-bright)', fontSize: '1.25rem', marginBottom: '12px' }}>🚀 Visión</h3>
             <p style={{ fontSize: '0.95rem', margin: 0, lineHeight: '1.7' }}>
               Convertirnos en un socio tecnológico de referencia, reconocido por la calidad de nuestro código,
               la claridad de nuestras soluciones y el impacto real en los negocios de nuestros clientes.
@@ -90,14 +90,14 @@ export const About = () => {
               <div style={{
                 fontSize: '3rem',
                 fontWeight: 800,
-                background: 'linear-gradient(135deg, #ff6a00 0%, #ff8534 100%)',
+                background: 'linear-gradient(135deg, var(--accent) 0%, var(--accent-bright) 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 marginBottom: '8px'
               }}>
                 {stat.value}
               </div>
-              <div style={{ color: '#d4d4d4', fontSize: '0.875rem' }}>
+              <div style={{ color: 'var(--muted)', fontSize: '0.875rem' }}>
                 {stat.label}
               </div>
             </div>
