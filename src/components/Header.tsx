@@ -1,5 +1,5 @@
-import logoDark from '../assets/JPG/logo_black_background_lbyte.jpg'
-import logoLight from '../assets/JPG/logo_black_lbyte.jpg'
+import logoDark from '../assets/WebP/logo_black_background_lbyte.webp'
+import logoLight from '../assets/WebP/logo_black_lbyte.webp'
 
 type HeaderProps = {
   theme: 'light' | 'dark'
