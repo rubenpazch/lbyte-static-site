@@ -24,9 +24,21 @@ export default defineConfig({
       },
     },
     rollupOptions: {
+      input: {
+        main: 'index.html',
+        servicios: 'servicios/index.html',
+        nosotros: 'nosotros/index.html',
+        contacto: 'contacto/index.html',
+        faq: 'faq/index.html',
+        blog: 'blog/index.html',
+        blog1: 'blog/1/index.html',
+        blog2: 'blog/2/index.html',
+        blog3: 'blog/3/index.html',
+        blog4: 'blog/4/index.html'
+      },
       output: {
         manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'react-vendor': ['react', 'react-dom']
         },
       },
     },

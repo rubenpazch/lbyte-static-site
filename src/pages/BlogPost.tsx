@@ -1,7 +1,9 @@
-import { useParams, Link } from 'react-router-dom'
+type BlogPostProps = {
+  postId?: string
+}
 
-export const BlogPost = () => {
-  const { id } = useParams()
+export const BlogPost = ({ postId }: BlogPostProps) => {
+  const id = postId
 
   // Datos de ejemplo - en producción esto vendría de una API o base de datos
   const blogPosts: Record<string, any> = {
@@ -174,8 +176,8 @@ export const BlogPost = () => {
         }}>
           <h1 style={{ color: 'var(--text)', marginBottom: '16px' }}>Post no encontrado</h1>
           <p style={{ color: 'var(--muted)', marginBottom: '32px' }}>El artículo que buscas no existe.</p>
-          <Link 
-            to="/blog" 
+          <a 
+            href="/blog" 
             style={{
               display: 'inline-block',
               padding: '12px 24px',
@@ -194,7 +196,7 @@ export const BlogPost = () => {
             }}
           >
             Volver al Blog
-          </Link>
+          </a>
         </section>
       </main>
     )
@@ -209,8 +211,8 @@ export const BlogPost = () => {
       }}>
         {/* Breadcrumb */}
         <div style={{ marginBottom: '32px' }}>
-          <Link 
-            to="/blog" 
+          <a 
+            href="/blog" 
             style={{
               color: 'var(--accent)',
               textDecoration: 'none',
@@ -221,7 +223,7 @@ export const BlogPost = () => {
             onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--accent)')}
           >
             ← Volver al Blog
-          </Link>
+          </a>
         </div>
 
         {/* Header del Post */}
@@ -371,8 +373,8 @@ export const BlogPost = () => {
           <p style={{ color: 'var(--muted)', marginBottom: '24px' }}>
             ¿Te gustó este artículo?
           </p>
-          <Link 
-            to="/blog" 
+          <a 
+            href="/blog" 
             style={{
               display: 'inline-block',
               padding: '12px 32px',
@@ -393,7 +395,7 @@ export const BlogPost = () => {
             }}
           >
             Leer más artículos
-          </Link>
+          </a>
         </div>
       </article>
     </main>

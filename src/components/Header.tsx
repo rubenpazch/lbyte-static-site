@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 
 type HeaderProps = {
   theme: 'light' | 'dark'
@@ -33,7 +32,7 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
         justifyContent: 'space-between',
         alignItems: 'center'
       }}>
-        <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+        <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
           <img
             src={theme === 'light' ? '/logo_black_lbyte_112.png' : '/logo_black_background_lbyte_112.png'}
             alt="L BYTE"
@@ -41,7 +40,7 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
             height="56"
             style={{ display: 'block', objectFit: 'contain', flexShrink: 0 }}
           />
-        </Link>
+        </a>
 
         {/* Desktop Nav */}
         <nav style={{
@@ -65,9 +64,9 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
                 {link.label}
               </a>
             ) : (
-              <Link
+              <a
                 key={link.href}
-                to={link.href}
+                href={link.href}
                 style={{
                   color: 'var(--text)',
                   textDecoration: 'none',
@@ -78,7 +77,7 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
                 onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text)')}
               >
                 {link.label}
-              </Link>
+              </a>
             )
           )}
         </nav>
@@ -168,9 +167,9 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
                 {link.label}
               </a>
             ) : (
-              <Link
+              <a
                 key={link.href}
-                to={link.href}
+                href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 style={{
                   color: 'var(--text)',
@@ -191,7 +190,7 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
                 }}
               >
                 {link.label}
-              </Link>
+              </a>
             )
           )}
         </nav>
