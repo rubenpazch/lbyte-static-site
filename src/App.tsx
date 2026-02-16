@@ -40,16 +40,18 @@ function App() {
   return (
     <Router>
       <Header theme={theme} onToggleTheme={toggleTheme} />
-      <Suspense fallback={<main style={{ paddingTop: '80px' }} />}> 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/servicios" element={<ServicesPage />} />
-          <Route path="/nosotros" element={<AboutPage />} />
-          <Route path="/contacto" element={<ContactPage />} />
-          <Route path="/faq" element={<FAQsPage />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:id" element={<BlogPost />} />
-        </Routes>
+      <Suspense fallback={<div style={{ minHeight: '90vh', paddingTop: '80px' }} />}> 
+        <div style={{ minHeight: '90vh' }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/servicios" element={<ServicesPage />} />
+            <Route path="/nosotros" element={<AboutPage />} />
+            <Route path="/contacto" element={<ContactPage />} />
+            <Route path="/faq" element={<FAQsPage />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
+          </Routes>
+        </div>
       </Suspense>
       <Footer />
     </Router>

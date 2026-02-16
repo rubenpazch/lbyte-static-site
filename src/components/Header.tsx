@@ -35,7 +35,7 @@ export const Header = ({ theme, onToggleTheme }: HeaderProps) => {
       }}>
         <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
           <img
-            src={theme === 'light' ? '/logo_black_lbyte.webp' : '/logo_black_background_lbyte.webp'}
+            src={theme === 'light' ? '/logo_black_lbyte_112.png' : '/logo_black_background_lbyte_112.png'}
             alt="L BYTE"
             width="56"
             height="56"
